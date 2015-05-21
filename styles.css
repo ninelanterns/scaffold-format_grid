@@ -189,10 +189,10 @@ body.jsenabled #gridshadebox_content.hide_content {
 }
 
 #gridshadebox_content ul li ul li {
-    list-style: disc outside none;
+    list-style: disc inside none;
 }
 #gridshadebox_content ul li ol li {
-    list-style: decimal outside none;
+    list-style: decimal inside none;
 } 
  
 #gridshadebox_close {
