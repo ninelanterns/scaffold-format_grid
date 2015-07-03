@@ -119,6 +119,10 @@ M.format_grid.init = function(Y, the_editing_on, the_section_redirect, the_num_s
     }
     this.shadebox_content = Y.one("#gridshadebox_content");
     this.shadebox_content.removeClass('hide_content'); // Content 'flash' prevention.
+
+    Y.one('#gtopics').delegate('click', function(ev) {
+    	ev.preventDefault();
+    },'a.subsectionname');
 };
 
 /**
