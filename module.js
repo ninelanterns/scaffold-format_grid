@@ -133,6 +133,10 @@ M.format_grid.init = function(Y, the_editing_on, the_section_redirect, the_num_s
             M.format_grid.grid_toggle();
         }
     }
+
+    Y.one('#gtopics').delegate('click', function(ev) {
+    	ev.preventDefault();
+    },'a.subsectionname');
 };
 
 /**
