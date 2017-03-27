@@ -279,7 +279,7 @@ body.jsenabled #gridshadebox_content.hide_content {
 }
 
 #gridshadebox_content ul li ol li {
-    list-style: decimal outside none;
+    list-style: decimal inside none;
 } 
  
 #gridshadebox_close {
