@@ -91,11 +91,12 @@ div#gridmiddle-column > ul {
     margin: 0 auto;
     padding: 0;
     width: 100%;
+    text-align: center;
 }
 #gridiconcontainer ul.gridicons {
-    display: flex;
+/*    display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: flex-start;*/
     margin: 0 auto;
     padding: 0;
     width: 100%;
@@ -297,7 +298,7 @@ body.jsenabled #gridshadebox_content.hide_content {
 
 #gridshadebox_content ul li ol li {
     list-style: decimal inside none;
-} 
+}
 
 .gridcursor #gridshadebox_close {
     /*rtl:ignore*/
