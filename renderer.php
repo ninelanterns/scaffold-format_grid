@@ -350,7 +350,7 @@ class format_grid_renderer extends format_section_renderer_base {
 
         if ($editing) {
             $streditsummary = get_string('editsummary');
-            $urlpicedit = $this->output->pix_url('t/edit');
+            $urlpicedit = $this->output->image_url('t/edit');
         } else {
             $urlpicedit = false;
             $streditsummary = '';
@@ -425,7 +425,7 @@ class format_grid_renderer extends format_section_renderer_base {
             $closeshadebox = get_string('closeshadebox', 'format_grid');
             echo html_writer::tag('img', '', array('id' => 'gridshadebox_close', 'style' => 'display: none;',
                 'class' => $deviceextra,
-                'src' => $this->output->pix_url('close', 'format_grid'),
+                'src' => $this->output->image_url('close', 'format_grid'),
                 'role' => 'link',
                 'alt' => $closeshadebox,
                 'aria-label' => $closeshadebox));
@@ -449,7 +449,7 @@ class format_grid_renderer extends format_section_renderer_base {
                     'aria-label' => $previoussection)
                 );
                 $prev .= html_writer::tag('img', '', array('class' => 'gridshadebox_arrow gridshadebox_previous'.$deviceextra,
-                    'src' => $this->output->pix_url('fa-arrow-circle-'.$previcon.'-w', 'format_grid'),
+                    'src' => $this->output->image_url('fa-arrow-circle-'.$previcon.'-w', 'format_grid'),
                     'alt' => $previoussection,
                     'aria-label' => $previoussection
                     )
@@ -463,7 +463,7 @@ class format_grid_renderer extends format_section_renderer_base {
                     'aria-label' => $nextsection)
                 );
                 $next .= html_writer::tag('img', '', array('class' => 'gridshadebox_arrow gridshadebox_next'.$deviceextra,
-                    'src' => $this->output->pix_url('fa-arrow-circle-'.$nexticon.'-w', 'format_grid'),
+                    'src' => $this->output->image_url('fa-arrow-circle-'.$nexticon.'-w', 'format_grid'),
                     'alt' => $nextsection,
                     'aria-label' => $nextsection
                     )
@@ -645,7 +645,7 @@ class format_grid_renderer extends format_section_renderer_base {
                             'sesskey' => sesskey(),
                             'course' => $course->id,
                             'showsummary' => 0)), html_writer::empty_tag('img', array(
-                            'src' => $this->output->pix_url('into_grid', 'format_grid'),
+                            'src' => $this->output->image_url('into_grid', 'format_grid'),
                             'alt' => $strhidesummaryalt)) . '&nbsp;' . $strhidesummary, array('title' => $strhidesummaryalt));
             }
         }
@@ -706,7 +706,7 @@ class format_grid_renderer extends format_section_renderer_base {
             if (!file_exists("$CFG->dirroot/course/format/grid/pix/new_activity_".$currentlanguage.".png")) {
                 $currentlanguage = 'en';
             }
-            $urlpicnewactivity = $this->output->pix_url('new_activity_'.$currentlanguage, 'format_grid');
+            $urlpicnewactivity = $this->output->image_url('new_activity_'.$currentlanguage, 'format_grid');
 
             // Get all the section information about which items should be marked with the NEW picture.
             $sectionupdated = $this->new_activity($course);
@@ -964,7 +964,7 @@ class format_grid_renderer extends format_section_renderer_base {
                 'role' => 'img',
                 'aria-label' => $sectionname));
         } else if ($section == 0) {
-            $imgurl = $this->output->pix_url('info', 'format_grid');
+            $imgurl = $this->output->image_url('info', 'format_grid');
             $content = html_writer::empty_tag('img', array(
                 'src' => $imgurl,
                 'alt' => $sectionname,
@@ -1011,7 +1011,7 @@ class format_grid_renderer extends format_section_renderer_base {
                 'aria-label' => $strdisplaysummaryalt)
             ),
             html_writer::empty_tag('img', array(
-                'src' => $this->output->pix_url('out_of_grid', 'format_grid'),
+                'src' => $this->output->image_url('out_of_grid', 'format_grid'),
                 'alt' => $strdisplaysummaryalt,
                 'role' => 'img',
                 'aria-label' => $strdisplaysummaryalt)) . '&nbsp;' . $strdisplaysummary,
