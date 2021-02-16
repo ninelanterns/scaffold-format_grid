@@ -55,5 +55,5 @@ div#gridshadebox_overlay {
 }
 
 body.format-grid.editing #region-main {
-    overflow-x: visible;
+    overflow-x: auto;
 }
